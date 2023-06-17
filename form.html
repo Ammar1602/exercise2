@@ -2,44 +2,41 @@
 <html lang="en">
 
 <head>
-    <title>Form</title>
+    <title>Page Form</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 
 <body>
-    <form>
-        <fieldset>
-            <legend>Formulir Calon Mahasiswa</legend>
+    <div class="form-box">
+        <div class="container">
+            <div class="header">
+                <h1>Form Pemesanan</h1>
+            </div>
+            <form action="">
+                <label for="nama">Nama</label><br>
+                <input type="text" placeholder="Nama" id="nama"><br><br>
+                <label for="nim">No. Identitas</label><br>
+                <input type="text" placeholder="Identitas" id="identitas"><br><br>
+                <label for="tanggal">Tanggal</label><br>
+                <input type="date" id="tanggal" name="tanggal"><br>
+                <p>
+                    Jenis Kamar <br>
+                    <select>
+                            <option></option>
+                            <option>Single Bed</option>
+                            <option>Double Bed</option>
+                            <option>Luxury Bed</option>
+                            <option>Suite Room</option>
+                        </select>
+                </p>
+                <label for="">Alamat</label><br>
+                <textarea placeholder="Tulis Alamatmu Disini" name="alamat" id="alamat" cols="30" rows="5"></textarea><br><br>
+                <button type="submit" onclick="KirimData()">Kirim</button>
+            </form>
+        </div>
+    </div>
 
-            <p>Nama : <input type="text" name="nama"></p>
-            <p>Alamat : <input type="text" name="alamat"></p>
-            <p>Password : <input type="text" name="pass"></p>
-            <p>
-                Jenis Kelamin :
-                <input type="radio" name="jk" value="laki-laki" checked /> Laki-Laki
-                <input type="radio" name="jk" id="perempuan" /> Perempuan
-            </p>
-            <p>
-                Bahasa pemrograman yang di kuasai : <br>
-                <input type="checkbox" name="web">web
-                <input type="checkbox" name="mobile">MOBILE
-                <input type="checkbox" name="desk">DESKTOP
-            </p>
-            <p>
-                Kota Asal :
-                <select>
-                    <option>Jogja</option>
-                    <option>Semarang</option>
-                </select>
-            </p>
-            <p>
-                Apa yang membuat kami harus memilih anda : <br>
-                <textarea rows="10" cols="60" placeholder="Tulis Jawaban Anda Di Sini"></textarea>
-            </p>
-            <p><input type="submit" value="submit"></p>
-        </fieldset>
-    </form>
-
-    <button class="back"><a href="index.html">Home</a></button>
+    <script src="script.js"></script>
 </body>
 
 </html>
