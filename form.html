@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Formulir Calon Mahasiswa</legend>
+
+            <p>Nama : <input type="text" name="nama"></p>
+            <p>Alamat : <input type="text" name="alamat"></p>
+            <p>Password : <input type="text" name="pass"></p>
+            <p>
+                Jenis Kelamin :
+                <input type="radio" name="jk" value="laki-laki" checked /> Laki-Laki
+                <input type="radio" name="jk" id="perempuan" /> Perempuan
+            </p>
+            <p>
+                Bahasa pemrograman yang di kuasai : <br>
+                <input type="checkbox" name="web">web
+                <input type="checkbox" name="mobile">MOBILE
+                <input type="checkbox" name="desk">DESKTOP
+            </p>
+            <p>
+                Kota Asal :
+                <select>
+                    <option>Jogja</option>
+                    <option>Semarang</option>
+                </select>
+            </p>
+            <p>
+                Apa yang membuat kami harus memilih anda : <br>
+                <textarea rows="10" cols="60" placeholder="Tulis Jawaban Anda Di Sini"></textarea>
+            </p>
+            <p><input type="submit" value="submit"></p>
+        </fieldset>
+    </form>
+
+    <button class="back"><a href="index.html">Home</a></button>
+</body>
+
+</html>
